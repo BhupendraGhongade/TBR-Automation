@@ -42,6 +42,7 @@ await page.click('#rw_4_listbox_active_option');
 await page.click('#lor > div > div > div > div');
 await page.click('#rw_5_listbox_active_option');
 await page.click('body'); // Often works if body has space
+await page.waitForTimeout(2000);
 
 
 await page.click('#root > div > div > main > div > div:nth-child(1) > aside.main_content > div > div > div > div > form > div > div.card-body > div:nth-child(4) > div > div > div.row > div.col-sm-12.text-right > button');
